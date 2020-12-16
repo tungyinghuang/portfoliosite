@@ -1,0 +1,543 @@
+html {
+  scroll-behavior: smooth;
+  height:100%;
+
+}
+
+body {
+
+  background-color: black;
+  font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+  margin:0;
+  padding:0;
+  height:100%;
+  overflow-x: hidden;
+
+}
+*, /*for the keep scrolling icon*/
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  font-size: 15px;
+  color: white;
+  margin-left: 30px;
+  margin-right:30px;
+}
+
+h1 {
+  color:#E6E6E6;
+font-family: 'Fira Sans', sans-serif;
+text-transform: uppercase;
+}
+
+h4,h3,h2 {
+  color:white;
+  font-family: 'Fira Sans', sans-serif;
+}
+h5{
+  color:white;
+}
+canvas{
+  display: block;
+}
+footer{
+  color:rgba(255, 255, 255, 0.5);
+}
+
+.topnav {
+  overflow: hidden;
+
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.2em;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.topnav a:hover {
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.topnav a.active {
+  background-color:black;
+  color:rgba(255, 255, 255, 0.5);
+}
+.footer-copyright{
+  text-align: center;
+  font-size: 1em;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+
+.welcome {
+  height:90%;
+
+}
+.textmiddle{
+  position:relative;
+  top:50%;
+  width:100%;
+  padding-left: 25%;
+  transform: translateY(-50%);
+  /*text-align: center;*/
+
+}
+
+.greet{
+
+  position: absolute;
+  top:50%;
+  width:100%;
+  transform: translateY(-50%);
+  text-align: center;
+
+
+}
+.greet p{
+
+  font-size: 7.5em;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-family: 'Fira Sans', sans-serif;
+  
+}
+
+
+.fadeIn{
+  animation: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+   0% {
+      opacity: 0;
+
+   }
+   100% {
+      opacity: 1;
+
+   }
+}
+
+.rotate{
+  animation: rotate 15s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+@import url("http://font.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+*
+{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+
+
+section{
+  padding:20px;
+  margin:40px auto;
+  background-color:black;
+
+}
+.filter ul{
+  margin-bottom: 3%;
+  list-style: none;
+  display: flex;
+  flex-wrap:nowrap;
+  overflow:auto;
+  justify-content: center;
+}
+
+.filter li{
+ position: relative;
+ font-size: 1.2em;
+ padding:8px 20px;
+}
+.filter a{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.filter a:after{
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.filter a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+#product-container{
+
+  margin-left:auto;margin-right:auto;width:960px;
+
+}
+
+.product{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.product .itembox{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin:10px;
+
+}
+.product .itembox img{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter:brightness(0.8);
+  object-fit: cover;
+
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.itembox:hover .overlay{
+  opacity: 0.8;
+}
+.producttext{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/* The sidebar menu for about page */
+.sidenav {
+  text-align: center;
+  height:100%;/* Full-height: remove this if you want "auto" height */
+  width:25%;/* Set the width of the sidebar */
+  position: fixed;/* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color :#E6E6E6;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  color:black;
+
+
+}
+.profile{
+  height:100%;/* Full-height: remove this if you want "auto" height */
+  width:25%;/* Set the width of the sidebar */
+  position: fixed;/* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1;
+  top:20%;
+}
+.profile img{
+
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* The navigation menu links */
+
+.sidenav p,small{
+  color:black;
+}
+.contact a {
+  display: inline-block
+
+}
+
+
+.main{
+   /* Same as the width of the sidebar */
+
+  z-index: 1; /* Stay on top */
+  top: 0;
+  padding: 0px 10px;
+  margin-left: 25%;
+
+}
+
+
+
+/* Post page */
+
+.description{
+
+  padding: 10px 20%;
+}
+.post{
+  margin-top: 50px;
+}
+.title h2{
+  height:100%;
+  width: 75%;
+}
+.title h3{
+  color:white;
+  text-align: left
+}
+.title h4{
+  text-align: left
+}
+.title p{
+  color:white;
+  text-align: left
+}
+.title span{
+  background:rgba(0,0,0, 0.5);
+  margin: 0;
+}
+.title img{
+  position: absolute;
+  right: -300px;
+  top: 50px;
+  z-index: -1;
+}
+
+
+.postpics{
+  position: relative;
+  width:66.6%;
+  height:90%;
+  float:left;
+}
+.postpics img{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.responsive{
+  max-width: 100%;
+  height: auto;
+}
+.posttitle{
+  width:33.3%;
+  float:right;
+  position: relative;
+  top:40%;
+}
+.posttitle h2{
+  padding-right: 20%;
+}
+
+
+.about-name{
+
+    position:relative;
+    top:50%;
+    width:100%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding:0 20%;
+
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width:55px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  color: white;
+
+}
+
+.fa:hover {
+    color: white;
+    opacity: 0.7;.
+
+}
+.fa-google, .fa-facebook, .fa-linkedin {
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+.dot ol {
+  list-style-type: none;
+}
+
+
+
+
+@media screen and (max-width: 550px) {
+  .textmiddle{
+    padding: 0;
+  }
+  .greet p{
+    font-size: 3em;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  #product-container{
+    width:100%;
+  }
+
+  .filter ul{
+
+    justify-content:flex-start;
+  }
+  .product{
+  justify-content:center;
+}
+  .sidenav{
+    position: relative;
+		width: 100%;
+		left: 0;
+		height: 100%;
+		padding-bottom: 10px;
+  }
+  .profile{
+    position:relative;
+    height:80%;
+    width:100%;
+  }
+
+  .main{
+    padding: 0px 50px;
+    margin:auto;
+  }
+  .postpics{
+    position: relative;
+    width:100%;
+    height:50%;
+
+  }
+  .postpics img{
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .posttitle{
+    position: relative;
+    height:auto;
+    width:100%;
+    top:0;
+    padding-right:10%;
+    padding-left:10%;
+  }
+  .posttitle p{
+    padding-right: 0;
+  }
+  .description{
+    padding: 10px 0;
+  }
+
+
+}
