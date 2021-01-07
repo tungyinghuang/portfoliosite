@@ -340,13 +340,8 @@ section{
 .post{
   margin-top: 50px;
 }
-.title h2{
-  height:100%;
-  width: 75%;
-}
-.title h3{
-  color:white;
-  text-align: left
+.title {
+  padding-bottom: 5%;
 }
 .title h4{
   text-align: left
@@ -360,10 +355,7 @@ section{
   margin: 0;
 }
 .title img{
-  position: absolute;
-  right: -300px;
-  top: 50px;
-  z-index: -1;
+
 }
 
 .wrap {
