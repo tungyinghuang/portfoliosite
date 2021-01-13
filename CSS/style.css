@@ -342,8 +342,14 @@ section{
   color:white;
   padding-bottom: 5%;
 }
-.title h5, ul{
+.title h5{
   padding-left: 2%;
+
+}
+.title ul{
+  padding-left: 2%;
+  font-weight: 400;
+  font-size: 1.5rem; line-height: 1.3;  letter-spacing: 0.15rem;
 }
 
 .title p{
@@ -353,6 +359,10 @@ section{
 .title span{
   background:rgba(0,0,0, 0.5);
   margin: 0;
+}
+.title img, iframe{
+  display:block;
+  margin:auto;
 }
 
 
@@ -387,7 +397,7 @@ section{
 }
 
 
-/* The sidebar menu for about page */
+/*about page */
 .about-name{
 
     position:relative;
@@ -420,7 +430,7 @@ section{
   color: white;
 }
 
-.dot ol {
+.experience-list ol {
   list-style-type: none;
 }
 
