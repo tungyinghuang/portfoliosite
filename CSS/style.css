@@ -95,14 +95,11 @@ footer{
 }
 
 .greet{
-
   position: absolute;
   top:50%;
   width:100%;
   transform: translateY(-50%);
   text-align: center;
-
-
 }
 .greet p{
 
@@ -266,7 +263,6 @@ section{
   width: 480px;
   height: 360px;
   margin:10px;
-
 }
 .product .itembox img{
   position: absolute;
@@ -441,19 +437,15 @@ section{
   }
 
   .filter ul{
-
     justify-content:flex-start;
   }
   .product{
   justify-content:center;
 }
-  .sidenav{
-    position: relative;
-		width: 100%;
-		left: 0;
-		height: 100%;
-		padding-bottom: 10px;
-  }
+  .producttext{
+  font-size: 40px;
+
+}
   .profile{
     position:relative;
     height:80%;
