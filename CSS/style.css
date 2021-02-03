@@ -439,6 +439,12 @@ section{
   .filter ul{
     justify-content:flex-start;
   }
+  .product .itembox{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin:10px;
+  }
   .product{
   justify-content:center;
 }
