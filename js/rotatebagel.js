@@ -32,7 +32,6 @@ function draw() {
 	ambientLight(0, 100, 255);
 	directionalLight(255, 0, 0, v);
 
-
 //push();
   noStroke()
 	ambientMaterial(255);
