@@ -5,11 +5,11 @@ var canvas;
 
 function windowResized(){
 
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(windowWidth, windowHeight*0.5);
 
 }
 function setup() {
-  canvas= createCanvas(windowWidth, windowHeight, WEBGL);
+  canvas= createCanvas(windowWidth, windowHeight*0.5, WEBGL);
 
   canvas.position(0,0);
   canvas.style('z-index','-1');
@@ -25,7 +25,7 @@ function draw() {
 	let camX = map(mouseX, 0, width, -0, 1200);
 	camera(camX,0,(height/2)/tan(PI/6),camX,0,0,0,1,0);
 
-  background(0);
+  background(255);
 
 	/////////////////
 	push();
