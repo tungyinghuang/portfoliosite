@@ -39,7 +39,7 @@ function draw() {
 	translate(dx,dy)
 
   rotateY(angle * 0.3);
-  rotateZ(angle *1.2);
+  rotateZ(angle *1.);
 
   torus(150, 100);
 
