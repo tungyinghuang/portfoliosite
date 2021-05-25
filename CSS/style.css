@@ -299,14 +299,21 @@ section{
   color: white;
   font-size: 25px;
   position: absolute;
-  top: 50%;
-  left: 35%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  top:50%;
+  padding:0 10% 0 10%;
+
+
+
   text-align: left;
 }
+.producttext_small{
+  color: white;
+  font-size:15px;
+  position: absolute;
+  top: 75%;
+  padding:0 10% 0 10%;
 
+}
 
 
 
