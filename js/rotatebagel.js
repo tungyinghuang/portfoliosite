@@ -5,11 +5,11 @@ var canvas;
 
 function windowResized(){
 
-  resizeCanvas(windowWidth, windowHeight/2);
+  resizeCanvas(windowWidth, windowHeight*0.45);
 
 }
 function setup() {
-  canvas= createCanvas(windowWidth, windowHeight/2, WEBGL);
+  canvas= createCanvas(windowWidth, windowHeight*0.45, WEBGL);
 
   canvas.position(0,0);
   canvas.style('z-index','-1');
