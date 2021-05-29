@@ -464,7 +464,7 @@ section{
   justify-content:center;
 }
   .producttext{
-  font-size: 40px;
+  font-size: 20px;
 
 }
   .profile{
@@ -480,26 +480,19 @@ section{
   .wrap{
     flex-direction: column;
   }
-  .postpics{
-    position: relative;
-    width:100%;
-    height:50%;
 
-  }
-  .postpics img{
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    padding:0 5%;
-  }
 
   .posttitle{
-    position: relative;
-    padding:0 10%;
+
   }
 
   .description{
-    padding: 10px 5%;
+
+  }
+  .title {
+    color:white;
+    padding: 2.5% 5% 1.75% 5%;
+
   }
 
 
