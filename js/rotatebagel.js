@@ -5,7 +5,7 @@ var canvas;
 
 function windowResized(){
 
-  resizeCanvas(windowWidth, windowHeight*0.4+51);
+  resizeCanvas(windowWidth,  windowHeight*0.4+51)
 
 }
 function setup() {
