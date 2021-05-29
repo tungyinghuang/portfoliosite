@@ -4,16 +4,26 @@ let angle = 0;
 var canvas;
 
 function windowResized(){
-
+  if(windowWidth>550){
   resizeCanvas(windowWidth, windowHeight*0.5);
+}else{
+  resizeCanvas(windowWidth, windowHeight*0.8);
+}
 
 }
 function setup() {
+  if(windowWidth>550){
   canvas= createCanvas(windowWidth, windowHeight*0.5, WEBGL);
 
   canvas.position(0,0);
   canvas.style('z-index','-1');
+} else{
+  canvas= createCanvas(windowWidth, windowHeight*0.8, WEBGL);
 
+  canvas.position(0,0);
+  canvas.style('z-index','-1');
+
+}
 }
 
 function draw() {
