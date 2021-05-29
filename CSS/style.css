@@ -369,9 +369,9 @@ section{
 }
 .postpics{
   position: relative;
-  width:100%;
+  width:100vw;
   height:100%;
-  float:left;
+
 }
 .postpics img{
   position: absolute;
