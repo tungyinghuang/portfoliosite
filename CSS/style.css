@@ -321,15 +321,9 @@ section{
 
 
 
-
-
-
-
 /* Post page */
 
 .description{
-
-
 }
 .post{
   margin-top: 50px;
@@ -481,18 +475,16 @@ section{
     flex-direction: column;
   }
 
-
-  .posttitle{
-
-  }
-
-  .description{
-
-  }
   .title {
     color:white;
     padding: 2.5% 5% 1.75% 5%;
+  }
+  .about-name{
 
+    top:25%;
+    width:100%;
+    text-align: center;
+    padding:0 5%;
   }
 
 
