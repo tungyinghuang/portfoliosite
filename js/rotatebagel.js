@@ -7,7 +7,7 @@ function windowResized(){
   if(windowWidth>550){
     resizeCanvas(windowWidth,  windowHeight*0.4+51)
   }else{
-    resizeCanvas(windowWidth,  windowHeight*0.8+51)
+    resizeCanvas(windowWidth,  windowHeight)
   }
 
 }
@@ -19,7 +19,7 @@ function setup() {
     canvas.style('z-index','-1');
   }
   else{
-    canvas= createCanvas(windowWidth, windowHeight*0.8+51, WEBGL);
+    canvas= createCanvas(windowWidth, windowHeight, WEBGL);
 
     canvas.position(0,0);
     canvas.style('z-index','-1');
