@@ -9,13 +9,13 @@ function windowResized(){
 
 }
 function setup() {
-  if(windowWidth>=550){
+
   canvas= createCanvas(windowWidth, windowHeight*0.45, WEBGL);
 
   canvas.position(0,0);
   canvas.style('z-index','-1');
-  
- }
+
+ 
 
 }
 
