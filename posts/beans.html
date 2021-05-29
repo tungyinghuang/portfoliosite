@@ -78,93 +78,81 @@
 
       <div class="title">
         <h4>Process</h4>
-          <img src="../images/post/beans-content.jpg" class='responsive'alt='process' >
+        <img src="../images/post/beans-content.jpg" class='responsive'alt='process' >
         <h4>Research</h4>
         <img src="../images/post/beans-research.jpg" class='responsive'alt='Research' >
         <p>Research phases can be divided into 2 parts, primary research and secondary research. I focused on technical issue on primary research and </p>
-        <h5>User interview</h5>
-        <p>Regarding the interview, I found some key findings that users emphasized when facing the problem. First, all of the interviewees mentioned that they hate to pay twice but they have no choice when they’re in a rush or no MTA staff around. Secondly, they blamed unclear signs of direction is the main reason for the problem. Some of them mentioned they don’t like to waste their time on finding the right entrance or walking all the way back to the ground. Some of them mentioned the concern about accessibility in MTA since passengers with disabilities might encounter this problem more often.</p>
-          <img src="../images/post/mta-pics.jpg" class='responsive'alt='Customer Journey Map'>
-        <h5>Survey results</h5>
-        <p>According to survey data, I found we have high demand for MTA which means that we can’t not give up on it and say oh that’s walk. We have to find a solution sooner or later. Every respondent has encountered the situation but not frequently and they all felt depressed when facing the situation.</p>
-        <p>In the survey, I ask them to rank the possible reasons for the problem, most of them blame the unclear entrance instruction rather than blaming their inattention. As for the solution, they prefer visual design and some of them think connecting with digital devices is a good idea. I took this result and map out the user journey map and persona.</p>
-          <img src="../images/post/mta-survey.jpg" class='responsive'alt='Customer Journey Map'>
+        <h5>In-depth user interview</h5>
+        <p>My potential users have to be familiar with digital devices and be experienced in quarantine during the COVID-19 outbreak. I got 4 participants who are students in their 20s. One of them is living with parents, one of them lives alone, and two of them live with roommates. I asked them two main questions:
+            How’s their overall feeling during quarantine at home?
+            Have you ever felt troubled when staying with your family/ partner/ roommate all day?
+        </p>
+        <img src="../images/post/beans-interview.jpg" class='responsive'alt='Customer Journey Map'>
+        <h5 class="grey">Key findings</h5>
+        <p>People staying with family or roommates didn’t dislike the lifestyle during the pandemic but sometimes felt troubled for different reasons. Most of them dealt with this problem by distancing one another from time to time, which demonstrates why absence makes the heart grow fonder. Hence,<b> physical distance</b> plays a crucial role in a relationship. A proper interpersonal distance can facilitate the relationship, and I believe it’s the key to the answer for my research question.</p>
 
-        <h5>Competitive Analysis</h5>
-        <p> Before getting into my prototype design, I'd like to mention two relevant designs in competitive analysis. Omny, you might see it in some MTA stations. It’s a tap-to-pay system using contactless cards or smart devices to make fare payments at MTA. Although It’s very intuitive, it’s just a charging machine.</p>
-        <p> I believe everyone has used google map before. For me, I use it almost everyday for not only finding my way but also checking the subway schedule. Overall, google map is very functional and useful, yet there’s a drawback that MTA usually has a lot of entrances but Google map doesn’t show its detail when approaching the entrance. This’s one of the reasons for our problem.</p>
-
-        <img src="../images/post/mta-competitive.jpg" class='responsive'alt='Customer Journey Map'>
-
-
-
-      </div>
-
-      <div class="title">
-        <h4>Analysis</h4>
-        <p>I synthesized the collected data from the primary and secondary research, sorted out features' priority with MoSCow, and finalized 3 insights.</p>
-
-        <h5>Feature Prioritization-MoSCow</h5>
-        <img src="../images/post/mta-features.jpg" class='responsive'alt='Customer Journey Map' >
-        <h5>Insights</h5>
-        <img src="../images/post/mta-insights.jpg" class='responsive'alt='Customer Journey Map' >
-
-      </div>
-
-
-      <div class="title">
-        <h4>Customer Journey Map and Persona</h4>
-        <p> Users usually feel alright until they find they’re in the wrong platform with no underpass. They have to walk the way back to street and find the entrance again. The process is time-consuming as well as tiring. Another point they feel frustrated is when they found out they pay twice due to a rush.</p>
-        <img src="../images/post/mta-cjm.png" class='responsive'alt='Customer Journey Map' >
-      </div>
-
-      <div class="title bg_grey">
-        <h4>Needs and painpoints</h4>
-        <h5>Needs</h5>
-        <p>Reduce the chances of detours and duplicate payments when finding the right entrance</p>
-        <h5>Painpoints</h5>
+        <h5>Expert interview</h5>
+        <p>Based on the interview, I'd like to emphasize the influence of distance on interpersonal relationship. In the expert interview, I asked professor and specialist some suggestions on how to visulize and measure distance. </p>
+        <p>Considering the measurement of interpersonal distance, GPS is the best choice for my design because it’s well-developed with many open resources online. To keep the user’s secret confidential, instead of embedding data from developed software I decided to build a web application with a server-side database to avoid data leakage. GPS API, Google Mmap API can be applied in my project for data collection and visualization. ArcGIS can be a reference of UI.</p>
+        <img src="../images/post/beans-tools.jpg" class='responsive'alt='Customer Journey Map'>
+        <h5>Secondary research</h5>
+        <p>I believe a physical distance should be considered as a key component when designing this project. Based on this idea,
+          it’s worthy to take a closer look on proxemics studies, meanwhile, people’s confession behavior on social media is another
+           point for the project. This research spanned three main areas: proxemics, social media and confession, and case study on Yik Yak. Due to large amount of studies, I list out the key findings below.</p>
+        <h5 class="grey">Key findings</h5>
         <ul>
-          <li>Duplicate payment </li>
-          <li>Waste time</li>
-          <li>Accessibility</li>
+          <li>Distance influences interpersonal relationships and GPS is a handy tool to measure real-time distance for web applications. </li>
+          <li>In terms of the confession behavior on social media, anonymity makes users feel free for being themselves and more willing to disclose, yet it has a risk of misuse. </li>
+          <li>In the case of Yik Yak, it illustrates how anonymity and proximity worked in social media like the regional restriction grouped the users to make them feel in-group instead of public, leading to more willingness to disclose information. Also, it reminds me that the responsibility of the developer is crucial. Finally, these studies gave me an insight into how to build a fun, digital project that explores interpersonal relations in the physical world. Project management and monitoring system are key to avoid misuse.</li>
         </ul>
 
 
-      </div>
-
-
-
-      <div class="title bg_grey">
-        <h4>Hypothesis</h4>
-
-        <p> I believe that optimizing the direction instruction on entrances of subway station with technology will prevent the experience of getting into wrong platform for variety of groups including the elder, disability, and tourist...etc. Hence, I designed the OMNY app to improve the traffic flow and manage payment history. </p>
-        <p> I expect the change will reduce unnecessary time for finding platform, reduce duplicate payment and an more accessible environment for passengers.</p>
 
 
       </div>
 
       <div class="title">
+        <h4>Ideation and Process</h4>
+        <h5>1. Topic exploration</h5>
+        <p>It's a long way &#128166;&#128166;, here's the affinity map to sort out my interests and abilities. To learn more about my ideation journey, please check out my weekly documentation on <a  target="_blank"  href="https://tyh289.medium.com/pre-thesis-weekly-reflection-71fb329a42fc">Medium!</a> </p>
+        <img src="../images/post/beans-map.jpg" class='responsive'alt='' >
+
+        <h5>2. Proximity design</h5>
+        <p>Some sketches for proximity design to explore the potential and storytelling format.</p>
+        <img src="../images/post/beans-sketch.jpg" class='responsive'alt='' >
+
+        <h5>3. Features and tools</h5>
+        <img src="../images/post/beans-projects.jpg" class='responsive'alt='' >
+        <img src="../images/post/beans-features.jpg" class='responsive'alt='' >
+
+
+
+      </div>
+
+
+      <div class="title">
         <h4>Design and prototype</h4>
+        <h5>1. Website wireframe</h5>
+        <img src="../images/post/beans-wireframe.jpg" class='responsive'alt=''  >
+        <h5>2. Low-fi prototype</h5>
+        <img src="../images/post/beans-wireframe2.jpg" class='responsive'alt='' width="960" height="540" >
+        <img src="../images/post/beans-mood.jpg" class='responsive'alt='' >
+        <p>Mood board. Inspired by most of The Matrix scenes. </p>
+        <h5>3. Final prototype</h5>
+        <img src="../images/post/beans-gif2.gif" class='responsive'alt=''  >
+        <img src="../images/post/beans-gif3.gif" class='responsive'alt=''  >
 
-        <p>The solution is to extend the OMNY system to a mobile app which includes user's <b>MTA record and preplan system</b>. In the meanwhile, since people are highly dependent on google map when taking MTA, it’ll be more efficient and acceptable for the public adding new functions on the app they’ve already used. Thus, I combine OMNY app and Google Map to create a pre plan system that prevents detour and double payment in the MTA system. Users can use both the OMNY app and Google Map to pre plan your route and set up a detour alarm. Before getting into the entrance, you can tap your phone on the OMNY information machine on the ground and see if it’s the right entrance you want. This prevents users from going down the wrong entrace. Also, You're able to check again before entering the platform, so the chance of duplicate payment can be greatly reduced. </p>
-        <p>I was inspired by the cooperation mode between google map and uber. Google map provides the uber option when planning routes, and once you click it will connect to the Uber app directly.</p>
-        <h5>UI Design</h5>
+        <h4>Make it works!</h4>
+        <p>Make sure the host, geolocation, form, dataset work. But you can't say it's a website without UI! So...</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/q2hZlzKNTgc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>2000 years later &#128296;  &#128295; &#128547; &#128166;</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/w2rlTWAJxsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-          <p>OMNY app has three panels, including map with route planning, OMNY record and user account. </p>
-          <img src="../images/post/mta.png" class='responsive'alt='OMNY app UI design'>
-          <img src="../images/post/mta-app.jpg" class='responsive'alt='OMNY app UI'>
-          <img src="../images/post/mta-map.jpg" class='responsive'alt='OMNY plugin in google map'>
-          <h5>Prototype</h5>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/MjM4-20HwLw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/GkexOyPa5AM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <h5>User flow</h5>
-            <img src="../images/post/mta-solution.jpg" class='responsive'alt='User flow' >
-          <img src="../images/post/mta-tap.jpg" class='responsive'alt='OMNY app UI design'>
       </div>
       <div class="title ">
-        <h4>Tools</h4>
-        <img src="../images/post/mta-tools.jpg" class='responsive'alt='Tools'>
+        
+
 
 
       <div>

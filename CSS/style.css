@@ -391,7 +391,9 @@ section{
 
 }
 
-
+.grey{
+  color:grey;
+}
 /*about page */
 .about-name{
 
