@@ -485,6 +485,17 @@ section{
     text-align: center;
     padding:0 5%;
   }
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width:55px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 20%;
+    color: grey;
+
+  }
 
 
 
