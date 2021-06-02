@@ -16,8 +16,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="../CSS/normalize.css">
@@ -40,7 +39,7 @@
   </div>
   <div class='welcome' >
     <div class='wrap'>
-      <div class='postpics'style="background-image: url('../images/post/beans-gif.gif');background-size: cover;  " >
+      <div class='postpics' data--100-top="opacity: 1;" data-top-bottom="opacity: 0;"style="background-image: url('../images/post/beans-gif.gif');background-size: cover;  " >
       <!--  <img src="../images/post/mta.png" class='responsive'alt='MTA subway imporvement UX design'>-->
       </div>
 
@@ -53,7 +52,7 @@
 
     <div id='description' class='description' >
 
-
+     <div  data--200-top="opacity: 1;" data-top-bottom="opacity: 0;">
       <div class='title bg_grey' >
         <hr>
         <h3>BEANS</h3>
@@ -64,13 +63,13 @@
       </div>
       <div id="intro"  class="title bg_grey" >
 
-        <h5>
+        <h4>
           My thesis project, BEANS, is an experimental
           social platform to let out the unspeakable things in house anonymously.
           The users are able to send a post on BEANS with their names, lies they
           told and the corresponding truth. The posts remain on the page for only
           24 hours and users can only see certain posts within 8 Km away from the creator. Welcome to check out the website, and spill the beans there!
-        </h5>
+        </h4>
       </div>
 
       <div class="title bg_grey" >
@@ -81,12 +80,13 @@
 
         <p><b> Thus, I wondered how to create a virtual space where people are able to let the cat out of the bag. </b> </p>
       </div>
+    </div>
 
-      <div class="title" data-center-top="opacity:0; margin-left: 200px; " data-top-top="opacity:1;margin-left: 0px;" >
+      <div class="title" data-bottom-top="margin-left: 500px; " data-center-top="margin-left: 0px;" >
         <h4>Process</h4>
         <img src="../images/post/beans-content.jpg" class='responsive'alt='process' >
       </div>
-      <div class="title" data-center-top="opacity:0;" data-top-top="opacity:1;" >
+      <div class="title" data-bottom-top=" margin-right: 500px; " data-center-top="margin-right: 0px;"  >
         <h4>Research</h4>
         <img src="../images/post/beans-research.jpg" class='responsive'alt='Research' >
         <p>Research phases can be divided into 2 parts, primary research and secondary research. I focused on technical issue on primary research and </p>
@@ -141,7 +141,7 @@
       </div>
 
 
-      <div class="title " data-center-top="opacity:0;" data-top-top="opacity:1;">
+      <div class="title " data-center-top="opacity:0.5;" data-top-top="opacity:1;">
         <h4>Design and prototype</h4>
         <h5>1. Website wireframe</h5>
         <p>First page is divided into 4 parts, including title page, instrcution, code of conduct, and the form for post. Once the submits the form, it will turn to the second page, where the posts show and visualization.</p>
@@ -183,7 +183,10 @@
     <!-- Copyright -->
 
   </footer>
-
+  <script type="text/javascript" src="skrollr.js"></script>
+	<script type="text/javascript">
+  	var s = skrollr.init({forceHeight: false});
+  </script>
 
 
 
