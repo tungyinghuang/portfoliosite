@@ -1,0 +1,190 @@
+<html>
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Beans | Tung-Ying</title>
+  <meta name="description" content="">
+  <meta name="author" content="Tungying">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../CSS/normalize.css">
+  <link rel="stylesheet" href="../CSS/skeleton.css">
+  <link rel="stylesheet" href="../CSS/style.css">
+
+  <!-- Favicon
+  ––––––––––––––––––––––––––––––––––––––––––––––––––
+  <link rel="icon" type="image/png" href="images/favicon.png">-->
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+</head>
+<body>
+
+  <div class="topnav">
+    <a href="../cv/230405_cv.pdf">Resume</a>
+    <a href="../about.html">About</a>
+    <a href="../index.html#works">Works</a>
+
+  </div>
+  <div class='welcome' >
+    <div class='wrap'>
+      <div class='postpics'style="background-image: url('../images/post/cx_resource.jpg');background-size: cover;  " >
+      <!--  <img src="../images/post/mta.png" class='responsive'alt='MTA subway imporvement UX design'>-->
+      </div>
+
+
+
+
+    </div>
+  </div>
+  <section>
+
+    <div id='description' class='description' >
+
+
+      <div class='title bg_grey' >
+        <hr>
+        <h3>BEANS</h3>
+        <h2>Year: 2021</h2>
+        <h2>Focus:  Research, Ideation, Web Application</h2>
+        <h2>Skills: Qualitative research, Front-end development, Usability test</h2>
+        <h2>Linkヽ(✿ﾟ▽ﾟ)ノ:<a target="_blank" href=" https://spillthebeans.glitch.me/"> https://spillthebeans.glitch.me/ </a></h2>
+      </div>
+      <div id="intro"  class="title bg_grey" >
+
+        <h5>
+          My thesis project, BEANS, is an experimental
+          social platform to let out the unspeakable things in house anonymously.
+          The users are able to send a post on BEANS with their names, lies they
+          told and the corresponding truth. The posts remain on the page for only
+          24 hours and users can only see certain posts within 8 Km away from the creator. Welcome to check out the website, and spill the beans there!
+        </h5>
+      </div>
+
+      <div class="title bg_grey" >
+        <h4>Research question</h4>
+        <p>Lying is human nature, is a common social strategy to allow a person to establish perceived control over a situation by manipulating it.  Deception results in the truth becoming a secret. However, it can be awfully draining since it takes a lot of negative physical and mental energy to maintain a lie.
+          In the meantime, the dependency on social networking surges is able to be a potential remedy for revealing secrets.
+        </p>
+
+        <p><b> Thus, I wondered how to create a virtual space where people are able to let the cat out of the bag. </b> </p>
+      </div>
+
+      <div class="title" data-center-top="opacity:0; margin-left: 200px; " data-top-top="opacity:1;margin-left: 0px;" >
+        <h4>Process</h4>
+        <img src="../images/post/beans-content.jpg" class='responsive'alt='process' >
+      </div>
+      <div class="title" data-center-top="opacity:0;" data-top-top="opacity:1;" >
+        <h4>Research</h4>
+        <img src="../images/post/beans-research.jpg" class='responsive'alt='Research' width="900">
+        <p>Research phases can be divided into 2 parts, primary research and secondary research. I focused on technical issue on primary research and </p>
+        <h5>In-depth user interview</h5>
+        <p>My potential users have to be familiar with digital devices and be experienced in quarantine during the COVID-19 outbreak. I got 4 participants who are students in their 20s. One of them is living with parents, one of them lives alone, and two of them live with roommates. I asked them two main questions:
+            How’s their overall feeling during quarantine at home?
+            Have you ever felt troubled when staying with your family/ partner/ roommate all day?
+        </p>
+        <img src="../images/post/beans-interview.jpg" class='responsive'alt='Customer Journey Map'>
+        <h5 class="grey">Key findings</h5>
+        <p>People staying with family or roommates didn’t dislike the lifestyle during the pandemic but sometimes felt troubled for different reasons. Most of them dealt with this problem by distancing one another from time to time, which demonstrates why absence makes the heart grow fonder. Hence,<b> physical distance</b> plays a crucial role in a relationship. A proper interpersonal distance can facilitate the relationship, and I believe it’s the key to the answer for my research question.</p>
+
+        <h5>Expert interview</h5>
+        <p>Based on the interview, I'd like to emphasize the influence of distance on interpersonal relationship. In the expert interview, I asked professor and specialist some suggestions on how to visulize and measure distance. </p>
+        <p>Considering the measurement of interpersonal distance, GPS is the best choice for my design because it’s well-developed with many open resources online. To keep the user’s secret confidential, instead of embedding data from developed software I decided to build a web application with a server-side database to avoid data leakage. GPS API, Google Mmap API can be applied in my project for data collection and visualization. ArcGIS can be a reference of UI.</p>
+        <img src="../images/post/beans-tools.jpg" class='responsive'alt='Customer Journey Map'>
+        <h5>Secondary research</h5>
+        <p>I believe a physical distance should be considered as a key component when designing this project. Based on this idea,
+          it’s worthy to take a closer look on proxemics studies, meanwhile, people’s confession behavior on social media is another
+           point for the project. This research spanned three main areas: proxemics, social media and confession, and case study on Yik Yak. Due to large amount of studies, I list out the key findings below.</p>
+        <h5 class="grey">Key findings</h5>
+        <ul>
+          <li>Distance influences interpersonal relationships and GPS is a handy tool to measure real-time distance for web applications. </li>
+          <li>In terms of the confession behavior on social media, anonymity makes users feel free for being themselves and more willing to disclose, yet it has a risk of misuse. </li>
+          <li>In the case of Yik Yak, it illustrates how anonymity and proximity worked in social media like the regional restriction grouped the users to make them feel in-group instead of public, leading to more willingness to disclose information. Also, it reminds me that the responsibility of the developer is crucial. Finally, these studies gave me an insight into how to build a fun, digital project that explores interpersonal relations in the physical world. Project management and monitoring system are key to avoid misuse.</li>
+        </ul>
+
+      </div>
+
+      <div class="title" data-center-top="opacity:0;" data-top-top="opacity:1;" >
+        <h4>Ideation and Process</h4>
+        <h5>1. Topic exploration</h5>
+        <p>It's a long way &#128166;&#128166;, here's the affinity map to sort out my interests and abilities. To learn more about my ideation journey, please check out my weekly documentation on <a  target="_blank"  href="https://tyh289.medium.com/pre-thesis-weekly-reflection-71fb329a42fc">Medium!</a> </p>
+        <img src="../images/post/beans-map.jpg" class='responsive'alt='' >
+
+        <h5>2. Proximity design</h5>
+        <p>Some sketches for proximity design to explore the potential and storytelling format.</p>
+        <img src="../images/post/beans-sketch.jpg" class='responsive'alt='' >
+
+        <h5>3. Features and tools</h5>
+        <p> Adding on my previous research and some great project with GPS and proximity as reference like Hell Is Other People, Yik Yak, After the hoop up...etc,<b> anonymity, ephemeral content and proximity</b> can be three main features on the platform. </p>
+        <img src="../images/post/beans-projects.jpg" class='responsive'alt='' >
+                <img src="../images/post/beans-features.jpg" class='responsive'alt='' >
+        <h5 class="grey"> Anonymity</h5>
+        <p>Level of discursive anonymity is somewhat related to self-disclosure. If users stay anonymous, they’re more willing to speak the truth and tend to act on their natural disposition and tell the truth. </p>
+        <h5 class="grey"> Ephemeral content</h5>
+        <p>Ephemeral content became a popular app feature in social media these days such as Instagram's story and Snapchat. The mechanism behind its popularity can attribute to the anxiety from fear of missing out. With this feature, this elicits users to express their real-time feelings as well as their hidden emotions. </p>
+        <h5 class="grey"> Proximity</h5>
+        <p>Designing distance can influence users’ interpersonal relationship based on the previous research. With this feature, I created a semi-public space online where users tend to feel like an in-group instead of sharing in public if we restricted the viewers in a limited area. At the same time, the design decision encourages people to leave their homes and move through the city in order to reveal more secrets.</p>
+
+
+      </div>
+
+
+      <div class="title " data-center-top="opacity:0;" data-top-top="opacity:1;">
+        <h4>Design and prototype</h4>
+        <h5>1. Website wireframe</h5>
+        <p>First page is divided into 4 parts, including title page, instrcution, code of conduct, and the form for post. Once the submits the form, it will turn to the second page, where the posts show and visualization.</p>
+        <img src="../images/post/beans-wireframe.jpg" class='responsive'alt=''  >
+        <h5>2. Low-fi prototype</h5>
+        <img src="../images/post/beans-wireframe2.jpg" class='responsive'alt='' width="960" height="540" >
+        <img src="../images/post/beans-mood.jpg" class='responsive'alt='' >
+        <p>Mood board. Inspired by most of The Matrix scenes. </p>
+        <h5>3. Final prototype</h5>
+        <img src="../images/post/beans-gif2.gif" class='responsive'alt=''  >
+        <p>First page: title page, instruction, code of conduct, form</p>
+        <img src="../images/post/beans-gif3.gif" class='responsive'alt=''  >
+        <p>Second page: post board with Google map</p>
+      </div>
+      <div class="title" data-center-top="opacity:0;" data-top-top="opacity:1;">
+        <h4>Make it works!</h4>
+        <p>Make sure the host, geolocation, form, dataset work. But you can't say it's a website without UI! So...</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/q2hZlzKNTgc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>2000 years later &#128296;  &#128295; &#128547; &#128166;</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/w2rlTWAJxsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+      </div>
+
+
+
+
+
+
+
+
+  </div>
+  </section>
+
+  <footer>
+        <!-- Copyright -->
+    <div class="footer-copyright">© 2023 Copyright: Tung-Ying Huang</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+
+
+
+
+</body>
